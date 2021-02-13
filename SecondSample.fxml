@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SecondSampleController">
+   <children>
+      <Button fx:id="send" layoutX="886.0" layoutY="640.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="100.0" text="Send" />
+      <Button fx:id="pdf" layoutX="769.0" layoutY="640.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="100.0" text="Crate PDF" />
+      <PasswordField fx:id="pass" layoutX="426.0" layoutY="640.0" onAction="#handle" />
+      <TextField fx:id="user" layoutX="116.0" layoutY="640.0" onAction="#handle" />
+      <Label layoutX="350.0" layoutY="644.0" text="Password:" />
+      <Label layoutX="34.0" layoutY="644.0" text="User Name:" />
+      <TableView fx:id="TV" prefHeight="600.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="title" prefWidth="75.0" text="title" />
+          <TableColumn fx:id="FirstName" prefWidth="75.0" text="FirstName" />
+            <TableColumn fx:id="LastName" prefWidth="75.0" text="LastName" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="email" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="hw" prefWidth="75.0" text="hw" />
+            <TableColumn fx:id="quizzes" prefWidth="75.0" text="quizzes" />
+            <TableColumn fx:id="lab" prefWidth="75.0" text="lab" />
+            <TableColumn fx:id="MT" prefWidth="75.0" text="MT" />
+            <TableColumn fx:id="CT" prefWidth="75.0" text="CT" />
+            <TableColumn fx:id="Final" prefWidth="75.0" text="Final" />
+            <TableColumn fx:id="total" prefWidth="75.0" text="total" />
+            <TableColumn fx:id="LG" prefWidth="75.0" text="LG" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

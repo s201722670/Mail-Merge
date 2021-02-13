@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="loadT" mnemonicParsing="false" onAction="#handle" text="Load Saved Template" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#handle" text="Save Template" />
+                  <MenuItem fx:id="saveAs" mnemonicParsing="false" onAction="#handle" text="Save Template As" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Contact">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Open Contact Manger" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="txtA" layoutX="5.0" layoutY="96.0" prefHeight="330.0" prefWidth="590.0" />
+      <Button fx:id="load" layoutX="26.0" layoutY="451.0" mnemonicParsing="false" onAction="#handle" prefHeight="25.0" prefWidth="139.0" text="Load Recipent List" />
+      <Label layoutX="14.0" layoutY="55.0" text="Place Holders:" />
+      <ComboBox fx:id="CoBo" layoutX="96.0" layoutY="51.0" onAction="#handle" prefHeight="25.0" prefWidth="139.0" />
+      <Label fx:id="lbl" layoutX="197.0" layoutY="455.0" text="No File loaded" />
+      <Button fx:id="Start" layoutX="420.0" layoutY="451.0" mnemonicParsing="false" onAction="#handler" text="Start Mail Merge Process" />
+   </children>
+</AnchorPane>
